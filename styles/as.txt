@@ -1,0 +1,215 @@
+
+.nav {
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+  display: flex;
+  justify-content: space-between;
+  height: 90px;
+  width: 100%;
+  background-color: #5C60F5;
+  position: relative;
+  padding: 10px;
+}
+.nav > .nav-header {
+  display: inline;
+}
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: #fff;
+  padding: 10px 10px 10px 10px;
+}
+.nav > .nav-btn {
+  display: none;
+}
+.nav > .nav-links {
+  display: flex;
+  align-items: center;
+  float: right;
+  font-size: 18px;
+}
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #efefef;
+}
+/* .nav > .nav-links > a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+} */
+.nav > #nav-check {
+  display: none;
+}
+@media (max-width:768px) {
+  .mobileTitle{
+    font-size: 20px !important;
+  }
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    padding-top: 15px;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    z-index: 2;
+    width: 100%;
+    text-align: center;
+    background-color: #5C60F5;
+    /* height: 400px !important; */
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 80px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+}
+
+/* ------------------------------------------------All nav-------------------------------------------------- */
+
+
+.navColor{
+  color: white;
+  padding-left: 20px;
+}
+.nav-all {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: flex;
+  justify-content: space-between;
+  height: 90px;
+  width: 100%;
+  background-color: #5C60F5;
+  position: relative;
+  padding: 10px;
+}
+.nav-all > .nav-header {
+  display: inline;
+}
+.nav-all > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: #fff;
+  padding: 10px 10px 10px 10px;
+}
+.nav-all > .nav-btn {
+  display: none;
+}
+.nav-all > .nav-links {
+  display: flex;
+  align-items: center;
+  float: right;
+  font-size: 18px;
+}
+.nav-all > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #efefef;
+}
+/* .nav > .nav-links > a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+} */
+.nav-all > #nav-check {
+  display: none;
+}
+@media (max-width:768px) {
+  .mobileTitle{
+    font-size: 20px !important;
+  }
+  .nav-all > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    padding-top: 15px;
+    right: 0px;
+    top: 0px;
+  }
+  .nav-all > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav-all > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .nav-all > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .nav-all > .nav-links {
+    position: absolute;
+    display: block;
+    z-index: 2;
+    width: 100%;
+    text-align: center;
+    background-color: #5C60F5;
+    /* height: 400px !important; */
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 80px;
+    left: 0px;
+  }
+  .nav-all > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav-all > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav-all > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+}
+
+
+/* Scroll bar design */
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+  
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: white; 
+  border-radius: 30px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #5C60F5; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: black; 
+}
