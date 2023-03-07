@@ -21,7 +21,7 @@ const Updateemp = ({ compEmployee }) => {
     try {
       setModalOpen(!modalOpen);
       const data = { id };
-      axios.patch(`${process.env.BACKEND_URL}/delete_employee`, data);
+      axios.patch(`http://localhost:8000/delete_employee`, data);
       window.location.reload(false);
     } catch (error) {
       console.log(error);
@@ -112,8 +112,9 @@ const Updateemp = ({ compEmployee }) => {
 export default Updateemp;
 
 export async function getServerSideProps(context) {
-  const email = context.query.Detail;
-  const res_emp = await fetch(`${process.env.BACKEND_URL}/${email}/comp_employee`);
+  const email = context.query.detail;
+  console.log(email,"heyheyheyheyheyheyhey");
+  const res_emp = await fetch(`http://localhost:8000/${email}/comp_employee`);
   const compEmployee = await res_emp.json();
   return { props: { compEmployee } };
 }

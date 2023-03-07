@@ -27,7 +27,7 @@ const ChangePassword = () => {
       console.log(data);
       if (data.newpassword === data.confirmpasword) {
         console.log(data);
-        axios.post(`${process.env.BACKEND_URL}/${offmail}/ChangePassword`, data);
+        axios.post(`http://localhost:8000/${offmail}/ChangePassword`, data);
         setModalOpen(!modalOpen);
       }
     } catch (error) {

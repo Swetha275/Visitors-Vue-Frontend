@@ -17,9 +17,9 @@ export default function Home() {
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <title>Visitors Vue</title>
       </Head>
-      <div class="nav">
+      <div className="nav">
         <input type="checkbox" id="nav-check" />
-        <div class="nav-header">
+        <div cNameclassName="nav-header">
           <Link href="/" className="nav-title">
             <p>
               <Image src="/logo.png" alt="logo" width={50} height={50}></Image>

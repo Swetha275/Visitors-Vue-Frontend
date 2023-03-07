@@ -4,6 +4,8 @@ import Footer from "../../../Component/Footer";
 import Head from "next/head";
 import Signuppage from "../../signuppage";
 
+
+
 const Homepage = ({ userData }) => {
   const [offmail, setOffmail] = useState("");
 
@@ -78,7 +80,7 @@ const Homepage = ({ userData }) => {
                         width="50"
                         height="80"
                         fill="currentColor"
-                        class="bi bi-person-badge"
+                        className="bi bi-person-badge"
                         viewBox="0 0 16 16"
                       >
                         <path d="M6.5 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1h-3zM11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
@@ -91,7 +93,7 @@ const Homepage = ({ userData }) => {
                     </p>
                     <a
                       className="btn px-3 mt-auto mx-auto"
-                      href={`${offmail}/AddPage`}
+                      href={`${offmail}/addpage`}
                     >
                       Click here
                     </a>
@@ -108,7 +110,7 @@ const Homepage = ({ userData }) => {
                         width="50"
                         height="80"
                         fill="currentColor"
-                        class="bi bi-person-check-fill"
+                        className="bi bi-person-check-fill"
                         viewBox="0 0 16 16"
                       >
                         <path
@@ -124,7 +126,7 @@ const Homepage = ({ userData }) => {
                     </p>
                     <a
                       className="btn px-3 mt-auto mx-auto"
-                      href={`${offmail}/UpdatePage`}
+                      href={`${offmail}/updatepage`}
                     >
                       Click here
                     </a>
@@ -141,7 +143,7 @@ const Homepage = ({ userData }) => {
                         width="50"
                         height="80"
                         fill="currentColor"
-                        class="bi bi-clock-history"
+                        className="bi bi-clock-history"
                         viewBox="0 0 16 16"
                       >
                         <path d="M8.515 1.019A7 7 0 0 0 8 1V0a8 8 0 0 1 .589.022l-.074.997zm2.004.45a7.003 7.003 0 0 0-.985-.299l.219-.976c.383.086.76.2 1.126.342l-.36.933zm1.37.71a7.01 7.01 0 0 0-.439-.27l.493-.87a8.025 8.025 0 0 1 .979.654l-.615.789a6.996 6.996 0 0 0-.418-.302zm1.834 1.79a6.99 6.99 0 0 0-.653-.796l.724-.69c.27.285.52.59.747.91l-.818.576zm.744 1.352a7.08 7.08 0 0 0-.214-.468l.893-.45a7.976 7.976 0 0 1 .45 1.088l-.95.313a7.023 7.023 0 0 0-.179-.483zm.53 2.507a6.991 6.991 0 0 0-.1-1.025l.985-.17c.067.386.106.778.116 1.17l-1 .025zm-.131 1.538c.033-.17.06-.339.081-.51l.993.123a7.957 7.957 0 0 1-.23 1.155l-.964-.267c.046-.165.086-.332.12-.501zm-.952 2.379c.184-.29.346-.594.486-.908l.914.405c-.16.36-.345.706-.555 1.038l-.845-.535zm-.964 1.205c.122-.122.239-.248.35-.378l.758.653a8.073 8.073 0 0 1-.401.432l-.707-.707z" />
@@ -153,7 +155,7 @@ const Homepage = ({ userData }) => {
                     <p>View the history of visitors so far</p>
                     <a
                       className="btn px-3 mt-auto mx-auto"
-                      href={`${offmail}/HistoryPage`}
+                      href={`${offmail}/historypage`}
                     >
                       Click here
                     </a>
@@ -170,7 +172,7 @@ const Homepage = ({ userData }) => {
                         width="50"
                         height="80"
                         fill="currentColor"
-                        class="bi bi-person-plus-fill"
+                        className="bi bi-person-plus-fill"
                         viewBox="0 0 16 16"
                       >
                         <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
@@ -184,7 +186,7 @@ const Homepage = ({ userData }) => {
                     <p>Add entries for employees in your organization</p>
                     <a
                       className="btn px-3 mt-auto mx-auto"
-                      href={`${offmail}/EmployeePage`}
+                      href={`${offmail}/employeepage`}
                     >
                       Click here
                     </a>
@@ -201,7 +203,7 @@ const Homepage = ({ userData }) => {
                         width="50"
                         height="80"
                         fill="currentColor"
-                        class="bi bi-person-gear"
+                        className="bi bi-person-gear"
                         viewBox="0 0 16 16"
                       >
                         <path d="M11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm.256 7a4.474 4.474 0 0 1-.229-1.004H3c.001-.246.154-.986.832-1.664C4.484 10.68 5.711 10 8 10c.26 0 .507.009.74.025.226-.341.496-.65.804-.918C9.077 9.038 8.564 9 8 9c-5 0-6 3-6 4s1 1 1 1h5.256Zm3.63-4.54c.18-.613 1.048-.613 1.229 0l.043.148a.64.64 0 0 0 .921.382l.136-.074c.561-.306 1.175.308.87.869l-.075.136a.64.64 0 0 0 .382.92l.149.045c.612.18.612 1.048 0 1.229l-.15.043a.64.64 0 0 0-.38.921l.074.136c.305.561-.309 1.175-.87.87l-.136-.075a.64.64 0 0 0-.92.382l-.045.149c-.18.612-1.048.612-1.229 0l-.043-.15a.64.64 0 0 0-.921-.38l-.136.074c-.561.305-1.175-.309-.87-.87l.075-.136a.64.64 0 0 0-.382-.92l-.148-.045c-.613-.18-.613-1.048 0-1.229l.148-.043a.64.64 0 0 0 .382-.921l-.074-.136c-.306-.561.308-1.175.869-.87l.136.075a.64.64 0 0 0 .92-.382l.045-.148ZM14 12.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0Z" />
@@ -213,7 +215,7 @@ const Homepage = ({ userData }) => {
                     </p>
                     <a
                       className="btn px-3 mt-auto mx-auto"
-                      href={`${offmail}/UpdateEmp`}
+                      href={`${offmail}/updateemp`}
                     >
                       Click here
                     </a>
@@ -231,7 +233,7 @@ const Homepage = ({ userData }) => {
                         width="50"
                         height="80"
                         fill="currentColor"
-                        class="bi bi-bar-chart-line-fill"
+                        className="bi bi-bar-chart-line-fill"
                         viewBox="0 0 16 16"
                       >
                         <path d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1V2z" />
@@ -241,7 +243,7 @@ const Homepage = ({ userData }) => {
                     <p>View live status of visitors in the dashboard </p>
                     <a
                       className="btn px-3 mt-auto mx-auto"
-                      href={`${offmail}/Dashboard`}
+                      href={`${offmail}/dashboard`}
                     >
                       Click here
                     </a>

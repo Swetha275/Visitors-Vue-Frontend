@@ -68,8 +68,8 @@ const History = ({ data }) => {
 export default History;
 
 export async function getServerSideProps(context) {
-  const email = context.query.Detail;
-  const res = await fetch(`${process.env.BACKEND_URL}/${email}/show_users`);
+  const email = context.query.detail;
+  const res = await fetch(`http://localhost:8000/${email}/show_users`);
   const data = await res.json();
   return { props: { data } };
 }

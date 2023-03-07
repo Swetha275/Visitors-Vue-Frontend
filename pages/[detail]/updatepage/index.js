@@ -97,7 +97,7 @@ const Updatepage = ({ data }) => {
 export default Updatepage;
 
 export async function getServerSideProps(context) {
-  const email = context.query.Detail;
+  const email = context.query.detail;
   const res = await fetch(`http://localhost:8000/${email}/update_user`);
   const data = await res.json();
   return { props: { data } };

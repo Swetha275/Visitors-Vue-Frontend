@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -9,9 +9,9 @@ const HomeNav = ({ userData }) => {
   };
   return (
     <>
-      <div class="nav">
+      <div className="nav">
         <input type="checkbox" id="nav-check" />
-        <div class="nav-header">
+        <div className="nav-header">
           <Link href="/" className="nav-title">
             <p>
               <Image src="/logo.png" alt="logo" width={50} height={50}></Image>
@@ -25,7 +25,7 @@ const HomeNav = ({ userData }) => {
           </Link>
           <Link href="./"></Link>
         </div>
-        <div class="nav-btn">
+        <div className="nav-btn">
           <label htmlFor="nav-check">
             <span></span>
             <span></span>

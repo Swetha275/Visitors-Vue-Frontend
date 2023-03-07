@@ -34,7 +34,7 @@ const AddPage = ({ employeeData }) => {
     };
     console.log(mailid, "Hii");
     try {
-      axios.post(`${process.KEND_URL}/add_visitors`, mailid);
+      axios.post(`http://localhost:8000/add_visitors`, mailid);
       setModalOpen(!modalOpen);
       emailjs
         .sendForm(
@@ -63,7 +63,6 @@ const AddPage = ({ employeeData }) => {
 
   return (
     <Fragment>
-     
       <Head>
         <link
           href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
@@ -315,8 +314,8 @@ const AddPage = ({ employeeData }) => {
 export default AddPage;
 
 export async function getServerSideProps(context) {
-  const email = context.query.Detail;
-  const res = await fetch(`${process.env.BACKEND_URL}/${email}/show_employee`);
+  const email = context.query.detail;
+  const res = await fetch(`http://localhost:8000/${email}/show_employee`);
   const employeeData = await res.json();
   return { props: { employeeData } };
 }

@@ -26,7 +26,7 @@ const Employeedata = () => {
       ...data,
     };
     try {
-      axios.post(`${process.env.BACKEND_URL}/add_emp`, mailid);
+      axios.post(`http://localhost:8000/add_emp`, mailid);
       setModalOpen(!modalOpen);
     } catch (error) {
       console.log(error);

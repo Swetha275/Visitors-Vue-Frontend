@@ -6,7 +6,7 @@ export default function Detail() {
   const [userData, setUserData] = useState('');
   useEffect(() => {
     const token = window.localStorage.getItem('token');
-    axios.post(`${process.env.BACKEND_URL}/userData`, { token }).then(data => {
+    axios.post(`http://localhost:8000/userData`, { token }).then(data => {
       setUserData(data);
     });
   },[]);

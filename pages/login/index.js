@@ -12,10 +12,10 @@ const Login = () => {
 
   function handleSubmit(e) {
     try {
+      console.log(process.env.BACKEND_URL,"backend");
       e.preventDefault();
       axios
-        .post(`${process.env.BACKEND_URL}/Login-user`, { email, password })
-        // .post(`http://localhost:8000/Login-user`, { email, password })
+        .post(`http://localhost:8000/login-user`, { email, password })
         .then((data) => {
           setResponse(data.data.error);
           console.log(data, "dataasdfghjg");
