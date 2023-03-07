@@ -1,12 +1,16 @@
-import React from "react";
+import React, {useEffect,useState} from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-const HomeNav = ({ userData }) => {
+const HomeNav = () => {
+  const [offmail, setOffmail] = useState(null);
   const logOut = () => {
     window.localStorage.clear();
     window.location.href = "/";
   };
+  useEffect(() => {
+    setOffmail(window.localStorage.getItem("email"));
+  }, [offmail]);
   return (
     <>
       <div className="nav">
@@ -23,7 +27,6 @@ const HomeNav = ({ userData }) => {
               </span>
             </p>
           </Link>
-          <Link href="./"></Link>
         </div>
         <div className="nav-btn">
           <label htmlFor="nav-check">
@@ -34,9 +37,9 @@ const HomeNav = ({ userData }) => {
         </div>
 
         <div className="nav-links">
-          <div className="mr-auto p-3 text-white">{userData}</div>
+          <div className="mr-auto p-3 text-white">{offmail}</div>
           <div>
-            {userData ? (
+            {offmail ? (
               <button
                 onClick={logOut}
                 className="float-right btn btn-primary bg-white text-black"

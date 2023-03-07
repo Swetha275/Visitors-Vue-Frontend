@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Head from "next/head";
+import Link from "next/link";
 
 const Footer = () => {
   const [offmail, setOffmail] = useState("");
@@ -36,24 +37,24 @@ const Footer = () => {
               </div>
               <div className="col-md-6 col-lg-4">
                 <h5 className="text-white mb-4">Popular Link</h5>
-                <a className="btn btn-link" href={`/${offmail}/addpage`}>
+                <Link className="btn btn-link" href={`/${offmail}/addpage`}>
                   Check-In
-                </a>
-                <a className="btn btn-link" href={`/${offmail}/updatepage`}>
+                </Link>
+                <Link className="btn btn-link" href={`/${offmail}/updatepage`}>
                   Check-Out
-                </a>
-                <a className="btn btn-link" href={`/${offmail}/historypage`}>
+                </Link>
+                <Link className="btn btn-link" href={`/${offmail}/historypage`}>
                   View History
-                </a>
-                <a className="btn btn-link" href={`/${offmail}/employeepage`}>
+                </Link>
+                <Link className="btn btn-link" href={`/${offmail}/employeepage`}>
                   Add employees
-                </a>
-                <a className="btn btn-link" href={`/${offmail}/updateemp`}>
+                </Link>
+                <Link className="btn btn-link" href={`/${offmail}/updateemp`}>
                   Update employees
-                </a>
-                <a className="btn btn-link" href={`/${offmail}/dashboard`}>
+                </Link>
+                <Link className="btn btn-link" href={`/${offmail}/dashboard`}>
                   Dashboard
-                </a>
+                </Link>
               </div>
               <div className="col-md-6 col-lg-4">
                 <h5 className="text-white mb-4">Social Media Links</h5>

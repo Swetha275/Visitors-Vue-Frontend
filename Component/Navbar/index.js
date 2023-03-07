@@ -9,7 +9,6 @@ const Navbar = () => {
     setOffmail(window.localStorage.getItem("email"));
   }, [offmail]);
 
-  console.log(offmail, "from nav");
   const logOut = () => {
     window.localStorage.clear();
     window.location.href = "/";

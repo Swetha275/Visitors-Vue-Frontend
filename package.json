@@ -11,18 +11,14 @@
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
     "@next/font": "13.1.1",
-    "@react-oauth/google": "^0.7.0",
     "axios": "^1.2.6",
     "bootstrap-icons": "^1.10.3",
     "chart.js": "^4.2.1",
     "dotenv": "^16.0.3",
-    "firebase": "^9.17.1",
     "next": "13.1.1",
     "react": "18.2.0",
     "react-chartjs-2": "^5.2.0",
-    "react-helmet": "^6.1.0",
     "react-hook-form": "^7.42.1",
-    "react-router-dom": "^6.8.1",
     "reactstrap": "^9.1.5",
     "styled-components": "^5.3.6"
   }

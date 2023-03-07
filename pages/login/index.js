@@ -15,14 +15,13 @@ const Login = () => {
       console.log(process.env.BACKEND_URL,"backend");
       e.preventDefault();
       axios
-        .post(`http://localhost:8000/login-user`, { email, password })
+        .post(`https://visitors-vue-backend.onrender.com/login-user`, { email, password })
         .then((data) => {
           setResponse(data.data.error);
-          console.log(data, "dataasdfghjg");
           if (data.data.status == "changepassword") {
             alert("Change your password!");
             window.localStorage.setItem("email", email);
-            route.push(`${email}/ChangePassword`);
+            route.push(`${email}/changepassword`);
           }
           if (data.data.status == "ok") {
             setResponse("");

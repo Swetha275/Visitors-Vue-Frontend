@@ -21,7 +21,7 @@ const Updateemp = ({ compEmployee }) => {
     try {
       setModalOpen(!modalOpen);
       const data = { id };
-      axios.patch(`http://localhost:8000/delete_employee`, data);
+      axios.patch(`https://visitors-vue-backend.onrender.com/delete_employee`, data);
       window.location.reload(false);
     } catch (error) {
       console.log(error);
@@ -114,7 +114,7 @@ export default Updateemp;
 export async function getServerSideProps(context) {
   const email = context.query.detail;
   console.log(email,"heyheyheyheyheyheyhey");
-  const res_emp = await fetch(`http://localhost:8000/${email}/comp_employee`);
+  const res_emp = await fetch(`https://visitors-vue-backend.onrender.com/${email}/comp_employee`);
   const compEmployee = await res_emp.json();
   return { props: { compEmployee } };
 }

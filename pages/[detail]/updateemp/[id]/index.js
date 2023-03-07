@@ -27,7 +27,7 @@ const Editemp = ({ Employee }) => {
   const onSubmit = async data => {
     try {
       setModalOpen(!modalOpen);
-      axios.patch(`http://localhost:8000/${offmail}/update_emp/${Employee[0].id}`, data);
+      axios.patch(`https://visitors-vue-backend.onrender.com/${offmail}/update_emp/${Employee[0].id}`, data);
     } catch (error) {
       console.log(error);
     }
@@ -127,7 +127,7 @@ export default Editemp;
 export async function getServerSideProps(context) {
   const id = context.query.id;
   const mail = context.query.detail;
-  const res_emp = await fetch(`http://localhost:8000/${mail}/get_employee/${id}`);
+  const res_emp = await fetch(`https://visitors-vue-backend.onrender.com/${mail}/get_employee/${id}`);
   const Employee = await res_emp.json();
   return { props: { Employee } };
 }

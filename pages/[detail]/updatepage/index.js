@@ -17,7 +17,7 @@ const Updatepage = ({ data }) => {
   const deleteTodo = async id => {
     try {
       const data = { id };
-      axios.patch(`http://localhost:8000/delete_visitors`, data);
+      axios.patch(`https://visitors-vue-backend.onrender.com/delete_visitors`, data);
       setModalOpen(!modalOpen);
     } catch (error) {
       console.log(error);
@@ -98,7 +98,7 @@ export default Updatepage;
 
 export async function getServerSideProps(context) {
   const email = context.query.detail;
-  const res = await fetch(`http://localhost:8000/${email}/update_user`);
+  const res = await fetch(`https://visitors-vue-backend.onrender.com/${email}/update_user`);
   const data = await res.json();
   return { props: { data } };
 }

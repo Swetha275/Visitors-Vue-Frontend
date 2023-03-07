@@ -69,7 +69,7 @@ export default History;
 
 export async function getServerSideProps(context) {
   const email = context.query.detail;
-  const res = await fetch(`http://localhost:8000/${email}/show_users`);
+  const res = await fetch(`https://visitors-vue-backend.onrender.com/${email}/show_users`);
   const data = await res.json();
   return { props: { data } };
 }

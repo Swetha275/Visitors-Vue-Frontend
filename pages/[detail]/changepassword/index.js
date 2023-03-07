@@ -27,7 +27,7 @@ const ChangePassword = () => {
       console.log(data);
       if (data.newpassword === data.confirmpasword) {
         console.log(data);
-        axios.post(`http://localhost:8000/${offmail}/ChangePassword`, data);
+        axios.post(`https://visitors-vue-backend.onrender.com/${offmail}/ChangePassword`, data);
         setModalOpen(!modalOpen);
       }
     } catch (error) {

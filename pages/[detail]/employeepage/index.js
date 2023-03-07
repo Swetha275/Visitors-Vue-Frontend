@@ -26,7 +26,7 @@ const Employeedata = () => {
       ...data,
     };
     try {
-      axios.post(`http://localhost:8000/add_emp`, mailid);
+      axios.post(`https://visitors-vue-backend.onrender.com/add_emp`, mailid);
       setModalOpen(!modalOpen);
     } catch (error) {
       console.log(error);

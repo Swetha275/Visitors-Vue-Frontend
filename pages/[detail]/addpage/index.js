@@ -34,7 +34,7 @@ const AddPage = ({ employeeData }) => {
     };
     console.log(mailid, "Hii");
     try {
-      axios.post(`http://localhost:8000/add_visitors`, mailid);
+      axios.post(`https://visitors-vue-backend.onrender.com/add_visitors`, mailid);
       setModalOpen(!modalOpen);
       emailjs
         .sendForm(
@@ -315,7 +315,7 @@ export default AddPage;
 
 export async function getServerSideProps(context) {
   const email = context.query.detail;
-  const res = await fetch(`http://localhost:8000/${email}/show_employee`);
+  const res = await fetch(`https://visitors-vue-backend.onrender.com/${email}/show_employee`);
   const employeeData = await res.json();
   return { props: { employeeData } };
 }
