@@ -176,6 +176,7 @@ td {
 }
 .homebg{
   background-color: #2124b1;
+  overflow: auto;
 }
 
 /********** Template CSS **********/
@@ -298,6 +299,29 @@ td {
   background: var(--light);
 }
 
+@media only screen and (max-width: 410px) {
+  .service-item{
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .cardss{
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: 0%;
+    padding: 0%;
+  }
+  .fullcontainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+  }
+}
 /*** Footer ***/
 .footer {
   background: url(/footer.png) center center no-repeat;
@@ -564,6 +588,30 @@ td {
     overflow-y: auto;
   }
 }
+@media only screen and (max-width: 1165px) {
+  .mobileTitle {
+    font-size: 17px !important;
+  }
+}
+@media only screen and (max-width: 1095px) {
+    .nav-all > .nav-links > a {
+      display: block;
+      width: 100%;
+      font-size: small;
+    }
+  }
+
+  @media only screen and (max-width:907px) {
+    .mobileTitle{
+      display: none;
+    }
+  }
+  @media only screen and (max-width:770px) {
+    .mobileTitle{
+      display:inline;
+    }
+  }
+
 
 /*  -------------dropdown -------------- */
 /* 
@@ -630,18 +678,20 @@ td {
 /* Scroll bar design */
 /* width */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 15px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
   background: white;
   border-radius: 30px;
+  box-shadow: inset 0 0 5px grey;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #2124b1;
+  border-radius: 10px;
 }
 
 /* Handle on hover */
@@ -678,9 +728,49 @@ td {
   margin-bottom: 20px;;
 }
 .pie {
-    width: fit-content;
+    width: 100%;
     position: relative;
+  justify-content: center;
+
     height: 14rem;
     display: flex;
     padding-top: 1rem;
   }
+
+
+  /* -----------------Dashboard------------------- */
+
+  /* ----------update employeee  ----------------*/
+  
+  @media only screen and (max-width: 777px) {
+    .editdiv{
+      width: 60%;
+    }
+  }
+
+  @media only screen and (max-width: 777px) {
+      .editdiv{
+        width: 90%;
+      }
+  }
+  @media only screen and (max-width: 320px) {
+    .editdiv{
+      width: 90%;
+    }
+    .details{
+      margin-top: 10px;
+      margin-left: 8px;
+    }
+    .formbucket{
+      width: 100%;
+      position: relative;
+    }
+}
+  /* background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 40px;
+  padding-bottom: 70px;
+  margin: 25px auto;
+  border-radius: 10px; */
+  
+  

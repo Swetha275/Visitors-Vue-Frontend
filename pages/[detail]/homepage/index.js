@@ -41,8 +41,8 @@ const Homepage = ({ userData }) => {
       </div>
 
       {/* Service start*/}
-      <div className="container py-5 aligncenter">
-        <div className="container px-lg-5">
+      <div className=" container py-5 aligncenter">
+        <div className="fullcontainer container px-lg-5">
           <div
             className="section-title position-relative text-center mb-5 pb-2 wow fadeInUp"
             data-wow-delay="0.1s"
@@ -52,7 +52,7 @@ const Homepage = ({ userData }) => {
             </h6>
             <h2 className="mt-2">Features of this application</h2>
           </div>
-          <div className="row justify-content-center m-10 g-4">
+          <div className="cardss row justify-content-center m-10 g-4">
             <div className="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.1s">
               <div className="service-item d-flex flex-column justify-content-center text-center rounded">
                 <div className="service-icon flex-shrink-0">

@@ -145,7 +145,7 @@ const Dashboard = ({ compData, compEmployee }) => {
               <div classNameName="">
                 <div className="row g-6 mb-12">
                   <div className="col-xl-6 col-sm-6 col-12">
-                    <div className="card shadow border-0">
+                    <div className="card shadow border-0 ml-4">
                       <div className="card-body">
                         <div className="row">
                           <div className="col">
@@ -163,7 +163,7 @@ const Dashboard = ({ compData, compEmployee }) => {
                           </div>
                         </div>
                         <div className="mt-2 mb-0 text-sm">
-                          <span className="text-nowrap text-xs text-muted">
+                          <span className="text-nowrap text-l text-muted">
                             Since last month
                           </span>
                         </div>
@@ -190,7 +190,7 @@ const Dashboard = ({ compData, compEmployee }) => {
                           </div>
                         </div>
                         <div className="mt-2 mb-0 text-sm">
-                          <span className="text-nowrap text-xs text-muted">
+                          <span className="text-nowrap text-l text-muted">
                             so far
                           </span>
                         </div>
@@ -218,7 +218,7 @@ const Dashboard = ({ compData, compEmployee }) => {
                           </div>
                         </div>
                         <div className="mt-2 mb-0 text-sm">
-                          <span className="text-nowrap text-xs text-muted">
+                          <span className="text-l text-muted">
                             Since last monthSince last monthSince last
                             monthSince last month
                           </span>
@@ -246,7 +246,7 @@ const Dashboard = ({ compData, compEmployee }) => {
                           </div>
                         </div>
                         <div className="mt-2 mb-0 text-sm">
-                          <span className="text-nowrap text-xs text-muted">
+                          <span className=" text-l text-muted">
                             Since last monthSince last monthSince last
                             monthSince last month
                           </span>

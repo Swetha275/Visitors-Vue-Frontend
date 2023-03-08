@@ -22,7 +22,7 @@ const Updateemp = ({ compEmployee }) => {
       setModalOpen(!modalOpen);
       const data = { id };
       axios.patch(`https://visitors-vue-backend.onrender.com/delete_employee`, data);
-      window.location.reload(false);
+      window.location.reload(true);
     } catch (error) {
       console.log(error);
     }
@@ -91,8 +91,8 @@ const Updateemp = ({ compEmployee }) => {
                       <button type="button" className="btn btn-outline-danger" onClick={() => openpopup(id)}>
                         Delete
                       </button>
-                      <Link href={`/${offmail}/Updateemp/${id}`}>
-                        <button type="button" className="btn btn-outline-danger">
+                      <Link href={`/${offmail}/updateemp/${id}`}>
+                        <button type="button" className="btn btn-outline-danger m-3">
                           Edit
                         </button>
                       </Link>
@@ -109,6 +109,8 @@ const Updateemp = ({ compEmployee }) => {
   );
 };
 
+
+
 export default Updateemp;
 
 export async function getServerSideProps(context) {
@@ -118,3 +120,4 @@ export async function getServerSideProps(context) {
   const compEmployee = await res_emp.json();
   return { props: { compEmployee } };
 }
+

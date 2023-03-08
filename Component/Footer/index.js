@@ -29,10 +29,10 @@ const Footer = () => {
                   TamilNadu
                 </p>
                 <p>
-                  <i className="fa fa-phone-alt me-3"></i>+91 8667868974
+                  <i className="fa fa-phone-alt me-3"></i>+91 44 7111 9111
                 </p>
                 <p>
-                  <i className="fa fa-envelope me-3"></i>swethak2727@.com
+                  <i className="fa fa-envelope me-3"></i>info@citchennai.net
                 </p>
               </div>
               <div className="col-md-6 col-lg-4">

@@ -138,8 +138,8 @@ const Employeedata = () => {
           </div>
           <div className="d-flex justify-content-center">
             <div className="float-right">
-              <input type="reset" className="btn btn-dark btn-block  me-4" />
-              <input type="submit" className="btn submitbutton text-white btn-block" />
+              <input type="reset" className="btn btn-dark btn-block mb-6 me-4" />
+              <input type="submit" className="btn submitbutton text-white mb-6 btn-block" />
             </div>
           </div>
         </form>
