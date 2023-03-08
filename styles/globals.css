@@ -672,32 +672,58 @@ td {
 }
  */
 
+/* 
 
-
-
-/* Scroll bar design */
-/* width */
-::-webkit-scrollbar {
-  width: 15px;
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.9);
+	border-radius: 10px;
+	background-color: #444444;
 }
 
-/* Track */
-::-webkit-scrollbar-track {
-  background: white;
-  border-radius: 30px;
-  box-shadow: inset 0 0 5px grey;
+::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
 }
 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #2124b1;
-  border-radius: 10px;
+::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	background-color: #D62929;
+	background-image: -webkit-linear-gradient(90deg,
+											  transparent,
+											  rgba(0, 0, 0, 0.4) 50%,
+											  transparent,
+											  transparent)
+} */
+/* 
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+	border-radius: 10px;
 }
 
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: black;
+::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
 }
+
+::-webkit-scrollbar-thumb
+{
+	background-color: rgb(33,36,177);
+	/* border-radius: 10px; */
+	/* background-image: -webkit-linear-gradient(0deg,
+	                                          rgba(255, 255, 255, 0.5) 25%,
+											  transparent 25%,
+											  transparent 50%,
+											  rgba(77, 90, 192, 0.498) 50%,
+											  rgba(77, 90, 192, 0.498) 75%,
+											  transparent 25%,
+											  transparent) */
+
 
 /* ---------Edit page emp details p------------------------ */
 
@@ -773,4 +799,6 @@ td {
   margin: 25px auto;
   border-radius: 10px; */
   
+
+
   
