@@ -26,8 +26,14 @@ const Employeedata = () => {
       ...data,
     };
     try {
-      axios.post(`https://visitors-vue-backend.onrender.com/add_emp`, mailid);
-      setModalOpen(!modalOpen);
+      const response = await axios.post(`https://visitors-vue-backend.onrender.com/add_emp`, mailid);
+      if (response.data.message=="Employee already exists!"){
+        alert(response.data.message);
+      }
+      else{
+        setModalOpen(!modalOpen);
+      }
+      
     } catch (error) {
       console.log(error);
     }

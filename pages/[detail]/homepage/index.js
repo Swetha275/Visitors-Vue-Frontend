@@ -3,7 +3,7 @@ import HomeNav from "../../../Component/HomeNav";
 import Footer from "../../../Component/Footer";
 import Head from "next/head";
 
-const Homepage = ({ userData }) => {
+const Homepage = () => {
   const [offmail, setOffmail] = useState("");
   useEffect(() => {
     setOffmail(window.localStorage.getItem("email"));
