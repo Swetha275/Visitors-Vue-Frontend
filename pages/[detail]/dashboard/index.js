@@ -123,15 +123,14 @@ const Dashboard = ({ compData, compEmployee }) => {
         <title>Visitors-Vue</title>
       </Head>
       <Navbar />
-
+      <h1 className="text-center p-3 fst-italic">Visitors dashboard</h1>
       <InnerLayout>
-        <h1 className="text-center p-3 fst-italic">Visitors dashboard</h1>
           <div className="piechart">
             <div className="pie">
               <Bar {...config}></Bar>
             </div>
           </div>
-        <div classNameName="row">
+        <div classNameName="row d-flex">
           {/* <div classNameName="col-sm-6">
             <div classNameName="stats-con">
               <div classNameName="chart-con">
@@ -142,14 +141,14 @@ const Dashboard = ({ compData, compEmployee }) => {
 
           <div classNameName="col-sm-12">
             <div classNameName="stats-con">
-              <div classNameName="">
-                <div className="row g-6 mb-12">
+              <div classNameName="twocards">
+                <div className=" row g-6 mb-12">
                   <div className="col-xl-6 col-sm-6 col-12">
-                    <div className="card shadow border-0 ml-4">
-                      <div className="card-body">
+                    <div className="card-body card shadow border-0 ml-4">
+                      <div className="">
                         <div className="row">
                           <div className="col">
-                            <span className="h6 font-semibold text-muted text-sm d-block mb-2">
+                            <span className="h6 font-semibold  d-block mb-2">
                               Total Visitors
                             </span>
                             <span className="h3 font-bold mb-0">
@@ -168,15 +167,17 @@ const Dashboard = ({ compData, compEmployee }) => {
                           </span>
                         </div>
                       </div>
+
                     </div>
+
                   </div>
 
                   <div className="col-xl-6 col-sm-6 col-12">
-                    <div className="card shadow border-0">
-                      <div className="card-body">
+                    <div className="card-body card shadow border-0">
+                      <div className="">
                         <div className="row">
                           <div className="col">
-                            <span className="h6 font-semibold text-muted text-sm d-block mb-2">
+                            <span className="h6 font-semibold d-block mb-2">
                               Check-ins today
                             </span>
                             <span className="h3 font-bold mb-0">
@@ -200,11 +201,11 @@ const Dashboard = ({ compData, compEmployee }) => {
                 </div>
                 <div className="row g-6 mb-12">
                   <div className="col-xl-6 col-sm-6 col-12">
-                    <div className="card shadow border-0">
-                      <div className="card-body">
+                    <div className="card-body card shadow border-0">
+                      <div className="">
                         <div className="row">
                           <div className="col">
-                            <span className="h6 font-semibold text-muted text-sm d-block mb-2">
+                            <span className="h6 font-semibold d-block mb-2">
                               Visitors In
                             </span>
                             <span className="h3 font-bold mb-0">
@@ -219,8 +220,7 @@ const Dashboard = ({ compData, compEmployee }) => {
                         </div>
                         <div className="mt-2 mb-0 text-sm">
                           <span className="text-l text-muted">
-                            Since last monthSince last monthSince last
-                            monthSince last month
+                            Since last month
                           </span>
                         </div>
                       </div>
@@ -228,11 +228,11 @@ const Dashboard = ({ compData, compEmployee }) => {
                   </div>
 
                   <div className="col-xl-6 col-sm-6 col-12">
-                    <div className="card shadow border-0">
-                      <div className="card-body">
+                    <div className="card-body card shadow border-0">
+                      <div className="">
                         <div className="row">
                           <div className="col">
-                            <span className="h6 font-semibold text-muted text-sm d-block mb-2">
+                            <span className="h6 font-semibold d-block mb-2">
                               Total employees
                             </span>
                             <span className="h3 font-bold mb-0">
@@ -247,8 +247,7 @@ const Dashboard = ({ compData, compEmployee }) => {
                         </div>
                         <div className="mt-2 mb-0 text-sm">
                           <span className=" text-l text-muted">
-                            Since last monthSince last monthSince last
-                            monthSince last month
+                            Since last month
                           </span>
                         </div>
                       </div>

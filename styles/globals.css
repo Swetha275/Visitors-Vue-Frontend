@@ -750,22 +750,150 @@ td {
   justify-content: center;
   background-color: white;
   border-radius: 1rem;
-  width: 100%;
-  margin-bottom: 20px;;
+  width: 50%;
+  height: fit-content;
+  margin-bottom: 10px;
+  margin-right: 1rem;
 }
 .pie {
     width: 100%;
     position: relative;
   justify-content: center;
+    height: 21rem;
+    padding: 1rem;
+    padding-left: 2rem;
+    margin-top: 3rem;
+  }
+  @media only screen and (max-width:1121px) {
+    .piechart {
+       height: 13rem;
+      width: 25rem;
+      margin:0;
+      margin-bottom: 2rem;
+    }
+    .pie{
+      width: 25rem;
+      height: auto;
+      margin: 0;
+    }
 
-    height: 14rem;
-    display: flex;
-    padding-top: 1rem;
+  }
+  @media (max-width:1024px) {
+    .piechart {
+      height: 16rem;
+      /* width: 40rem; */
+    }
   }
 
+  @media (max-width:575px) {
+    .twocards {
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  @media (max-width:1024px) {
+    .piechart {
+      height: 13rem;
+      /* width: 40rem; */
+    }
+  }
+  .card-body{
+    width:18rem;
+  }
+  .stats-con{
+    width: 100%;
+  }
+
+  @media (max-width:408px) {
+    .piechart {
+      height: 13rem;
+      /* width: 40rem; */
+    }
+  }
+  .card-body{
+    width:18rem;
+  }
+  .stats-con{
+    width: 100%;
+  } 
+  @media (max-width:1024px) {
+    .piechart {
+      width: 20rem;
+      height: min-content;
+    }
+    .pie{
+      width: 20rem;
+
+    }
+  }
+
+  @media (max-width: 381px) {
+    .mobileTitle {
+      font-size: 20px !important;
+    }
+    .nav-all > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      padding-top: 15px;
+      right: 0px;
+      top: 0px;
+    }
+    .nav-all > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+    .nav-all > .nav-btn > label:hover,
+    .nav #nav-check:checked ~ .nav-btn > label {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    .nav-all > .nav-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid #eee;
+    }
+    .nav-all > .nav-links {
+      position: absolute;
+      display: block;
+      z-index: 2;
+      width: 100%;
+      text-align: center;
+      background-color: #2124b1;
+      /* height: 400px !important; */
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 80px;
+      left: 0px;
+    }
+    .nav-all > .nav-links > a {
+      display: block;
+      width: 100%;
+    }
+    .nav-all > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    .nav-all > #nav-check:checked ~ .nav-links {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+    }
+  }
 
   /* -----------------Dashboard------------------- */
 
+
+
+/* .halfcont{
+  margin-left: 2rem;
+} */
+.col-auto{
+  margin-right: 0%;
+}
+.sechalf{
+  width: 100%;
+} 
   /* ----------update employeee  ----------------*/
   
   @media only screen and (max-width: 777px) {
@@ -773,6 +901,12 @@ td {
       width: 60%;
     }
   }
+  @media only screen and (max-width: 576px) {
+    .card-body{
+      margin:0 auto;
+    }
+  }
+
 
   @media only screen and (max-width: 777px) {
       .editdiv{
