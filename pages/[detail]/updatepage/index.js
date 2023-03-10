@@ -24,7 +24,7 @@ const Updatepage = ({ data }) => {
     }
   };
   function closePopup() {
-    route.push(`/${offmail}/HistoryPage`);
+    route.push(`/${offmail}/historypage`);
     setModalOpen(!modalOpen);
   }
 

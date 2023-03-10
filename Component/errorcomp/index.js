@@ -2,7 +2,7 @@ import React from 'react'
 
 const Errorcomp = () => {
   return (
-    <div>Errorcomp</div>
+    <div>Redirecting..Please wait</div>
   )
 }
 
