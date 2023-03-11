@@ -194,7 +194,34 @@ td {
   --light: #f7faff;
   --dark: #1d1d27;
 }
+/* -------------------search bar ----------------------  */
 
+.searchbar{
+  justify-content: right;
+  align-items: right;
+  /* float: right; */
+  margin-left: 56rem;
+  margin-top: 0rem;
+  /* flex-direction: column; */
+}
+.searchbar input{
+
+    width: 300px;
+    height: 40px;
+    border: 2px solid gray;
+    border-radius: 6px;
+    margin-left: 5px;
+}
+/* .boxx{
+  display: flex;
+} */
+.headele{
+  justify-content: center;
+  align-items: center;
+  display: inline;
+  /* flex-direction: column; */
+}
+/* -------------------searchbar ------------------------ */
 /*** Navbar ***/
 
 .navbar {
