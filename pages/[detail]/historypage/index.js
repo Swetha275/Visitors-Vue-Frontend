@@ -21,10 +21,10 @@ const History = ({ data }) => {
         <h1 className="text-center p-3 fst-italic">Visitor's History</h1>
       </div>
       <div className="searchbar">
-        <img src="https://img.icons8.com/ios-glyphs/30/000000/search-client.png" />
+        <img src="https://img.icons8.com/ios-glyphs/30/000000/search-client.png"  />
         <input
           type="text"
-          placeholder="Search visitor..."
+          placeholder="Find visitor..."
           onChange={(event) => setSearchTerm(event.target.value)}
         />
       </div>
