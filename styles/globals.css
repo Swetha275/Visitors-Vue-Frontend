@@ -177,6 +177,7 @@ td {
 .homebg{
   background-color: #2124b1;
   overflow: auto;
+  height: 100vh;
 }
 
 /********** Template CSS **********/

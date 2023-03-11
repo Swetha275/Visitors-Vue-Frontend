@@ -36,7 +36,7 @@ const Editemp = ({ Employee }) => {
   function closePopUp() {
     reset();
     setModalOpen(!modalOpen);
-    route.push(`/${offmail}/UpdateEmp`);
+    route.push(`/${offmail}/updateemp`);
   }
 
   return (

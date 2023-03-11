@@ -20,7 +20,9 @@ const Homepage = () => {
       </Head>
       <HomeNav/>
       <div className="homebg">
-        <div className="container-fluid py-5 hero-header mb-5">
+        {/*  come kere*/}
+        <div className="container-fluid py-5 hero-header mb-5"> 
+        {/*  */}
           <div className="container-fluid my-5 py-5 px-lg-5">
             <div className="row g-5 py-5">
               <div className="col-lg-6 text-center text-lg-start">
