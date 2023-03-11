@@ -8,6 +8,13 @@ body {
   background-color: #f7f7f7;
 }
 
+@media (max-width:624px) {
+
+  scrol::-webkit-scrollbar {
+    width: 0;
+  }
+}
+
 .submitbutton{
   background-color: #2124b1;
   color: #ffffff;  
@@ -177,7 +184,7 @@ td {
 .homebg{
   background-color: #2124b1;
   overflow: auto;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 /********** Template CSS **********/
@@ -725,7 +732,6 @@ td {
 											  transparent 25%,
 											  transparent) */
 
-
 /* ---------Edit page emp details p------------------------ */
 
 .details{
@@ -935,5 +941,3 @@ td {
   border-radius: 10px; */
   
 
-
-  
