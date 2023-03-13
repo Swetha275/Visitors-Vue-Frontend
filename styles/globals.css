@@ -183,7 +183,7 @@ td {
 }
 .homebg{
   background-color: #2124b1;
-  overflow: auto;
+  overflow: hidden;
   /* height: 100vh; */
 }
 
