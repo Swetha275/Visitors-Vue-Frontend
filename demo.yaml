@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: visitorsvue-fe
+spec:
+  containers:
+  - name: visitorsvue-fe
+    image: swetha275/visitorsvue:frontend
+    ports:
+    - containerPort: 3000

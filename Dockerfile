@@ -2,7 +2,7 @@
 FROM node:18.14.2-slim
 
 # Set the working directory to /app
-WORKDIR /
+WORKDIR /home/app
 
 COPY . ./
 
