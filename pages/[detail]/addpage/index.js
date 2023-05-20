@@ -32,7 +32,6 @@ const AddPage = ({ employeeData }) => {
       offmail,
       ...data,
     };
-    console.log(mailid, "Hii");
     try {
       axios.post(`https://visitors-vue-backend.onrender.com/add_visitors`, mailid);
       setModalOpen(!modalOpen);

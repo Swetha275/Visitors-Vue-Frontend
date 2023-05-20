@@ -12,7 +12,6 @@ const Login = () => {
 
   function handleSubmit(e) {
     try {
-      console.log(process.env.BACKEND_URL,"backend");
       e.preventDefault();
       axios
         .post(`https://visitors-vue-backend.onrender.com/login-user`, { email, password })

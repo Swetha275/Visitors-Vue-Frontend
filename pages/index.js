@@ -3,6 +3,7 @@ import { Inter } from "@next/font/google";
 import Login from "./login";
 import Link from "next/link";
 import Image from "next/image";
+import Footer from "../Component/Footer";
 
 export default function Home() {
   return (
@@ -17,7 +18,7 @@ export default function Home() {
       </Head>
       <div className="nav">
         <input type="checkbox" id="nav-check" />
-        <div cNameclassName="nav-header">
+        <div className="nav-header">
           <Link href="/" className="nav-title">
             <p>
               <Image src="/logo.png" alt="logo" width={50} height={50}></Image>
@@ -32,6 +33,7 @@ export default function Home() {
         </div>
       </div>
       <Login />
+      <Footer/>
     </>
   );
 }
