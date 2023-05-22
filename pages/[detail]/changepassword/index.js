@@ -88,13 +88,6 @@ const ChangePassword = () => {
                 })}
               />
 
-              <ErrorMessage
-                error={errors?.pasword}
-                messages={{
-                  required: "Please enter email id",
-                  pattern: "Invalid email id",
-                }}
-              />
             </div>
 
             <div className="form-outline p-3">
@@ -113,13 +106,6 @@ const ChangePassword = () => {
                 })}
               />
 
-              <ErrorMessage
-                error={errors?.pasword}
-                messages={{
-                  required: "Please enter email id",
-                  pattern: "Invalid email id",
-                }}
-              />
             </div>
 
             <div className="form-outline p-3">
@@ -138,13 +124,6 @@ const ChangePassword = () => {
                 })}
               />
 
-              <ErrorMessage
-                error={errors?.pasword}
-                messages={{
-                  required: "Please enter email id",
-                  pattern: "Invalid email id",
-                }}
-              />
             </div>
           </div>
         </div>
